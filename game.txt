@@ -60,7 +60,7 @@ Buildings
 		icon class:buildingIconSize
 		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
 		cost:50 belief
-		yield: 1 belief
+		on tick:yield 1 belief
 		cost increase:150%
 
 	*PetitionDrive
@@ -69,15 +69,15 @@ Buildings
 		icon class:buildingIconSize
 		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
 		cost:150 belief
-		yield:2 influence
+		on tick:yield 2 influence
 		cost increase:156%
 
 	*Lobbying
 		name:Lobbying
 		desc:Allows you to manipulate governments.
 		cost:50 belief,100 influence
-		yield:60 belief
-		yield:25 influence
+		on tick:yield 60 belief
+		on tick:yield 25 influence
 		cost increase:159%
 		req:40 belief,80 influence
 
