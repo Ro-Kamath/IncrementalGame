@@ -1,0 +1,86 @@
+Let's make a game!
+		name: Consensus Engine
+		by: Rohit Kamath
+		desc: Build operational hegemony by mastering belief, influence, logic, trust, and compliance and control the world's narrative 	<//>Manufacture consent. Weaponize consensus. Become the engine.
+		created: 03/04/2026
+		version: 0.0.1
+
+CSS
+#game.on
+{
+	background-size: 100% 100%;
+	image-rendering: pixelated;
+}
+
+.buildingIconSize
+{
+	height: 64px;
+	width: 64px;
+}
+Settings
+	background: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/background_image.jpg
+	stylesheet: stuff/bigBlue.css
+
+Resources
+	*Belief|belief
+		name: Belief
+		desc: The raw fuel of conviction. <//>Belief is the emotional foundation that turns ideas into movements and makes people willing to follow without question.
+		show earned
+	
+	*Influence|influence
+		name: Influence
+		desc: The quiet current that bends minds and shapes decisions.<//> Influence spreads your reach, turns neutral voices into allies, and quietly redirects the flow of power.
+		hidden when 0
+	
+	*Logic|logic
+		name: Logic
+		desc: The sharp blade of reason and evidence. <//>Logic dismantles opposing arguments, builds airtight frameworks, and gives your narrative the appearance of unassailable truth.
+		hidden when 0
+	
+	*Trust|trust
+		name: Trust
+		desc: The invisible bond that holds systems together. <//>Trust makes people defend you even when facts fail, creates loyalty that survives scandals, and turns followers into true believers.
+		hidden when 0
+
+	*Compliance|compliance
+		name: Compliance
+		desc: The ultimate expression of control. <//>Compliance is when people willingly enforce your rules, police each other, and internalize your narrative as their own reality.
+		hidden when 0
+	
+	*OperationalHegemony|OH
+		name: Operational Hegemony|OH
+		desc: The ultimate measure of your power. <//>Operational Hegemony is the distilled essence of all your influence — the total control you have forged over narratives, institutions, and reality itself.
+		hidden when 0
+		
+Buildings
+
+	*Focus
+		name:Focus
+		desc:Focus is needed to form beliefs.
+		icon class:buildingIconSize
+		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
+		cost:50 belief
+		on tick:yield 1 belief
+		cost increase:150%
+
+Buttons
+	*beliefButton
+		on click:yield 1 belief
+		class:bigButton hasFlares
+		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/belieficon.png
+
+Upgrades
+
+	*FocusAmplifier
+  		name:Focus Amplifier
+  		desc: The initial mental commitment to the new reality. </>Effect: <b>Multiplies Focus output by 2</b>
+		passive:multiply yield of Focus by 2
+		cost:350 belief
+		req:belief>=300 
+
+Achievements
+
+	*gainSelfBelief
+		name:Gain Self Belief
+		desc:Have <b>100</b> belief.
+		req:100 belief
