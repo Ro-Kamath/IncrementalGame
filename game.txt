@@ -91,10 +91,10 @@ Upgrades
 
 	*FocusAmplifier
   		name:Focus Amplifier
-  		desc:The initial mental commitment to the new reality. </>Effect: <b>Multiplies Focus output by 2</b>
+  		desc:<.>You Focus <b>twice</n> as efficiently.<q>"The initial mental commitment to the new reality."
 		passive:multiply yield of Focus by 2
-		cost:350 belief
-		req:belief>=300
+		cost:100 belief
+		req:belief>=6
 
 	*StreetTeamCoord
   		name:Street Team Coordination
