@@ -56,7 +56,7 @@ Buildings
 
 	*Focus
 		name:Focus
-		desc:</>Focus is needed to form beliefs.</></><b>Effects:</b><.>Produces <b><#FABC3C>1 belief</b></#> per second
+		desc:</>Focus is needed to form beliefs.</></><b>Effects:</b><.>Produces <b><#fabc3c>1 belief</b></#> per second
 		icon class:buildingIconSize
 		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
 		cost:50 belief
@@ -65,7 +65,7 @@ Buildings
 
 	*PetitionDrive
 		name:Petition Drive
-		desc:</>Helps you propagate your beliefs and acquire influence.</></><b>Effects:</b><.>Produces <b><#3A3042>2 influence</b></#> per second
+		desc:</>Helps you propagate your beliefs and acquire influence.</></><b>Effects:</b><.>Produces <b><#3a3042>2 influence</b></#> per second
 		icon class:buildingIconSize
 		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
 		cost:150 belief
@@ -74,7 +74,7 @@ Buildings
 
 	*Lobbying
 		name:Lobbying
-		desc:</>Allows you to manipulate governments.</></><b>Effects:</b><.>Produces <b><#FABC3C>60 belief</b></#> per second and <b><#3A3042>25 influence</b></#>  per second
+		desc:</>Allows you to manipulate governments.</></><b>Effects:</b><.>Produces <b><#fabc3c>60 belief</b></#> per second and <b><#3a3042>25 influence</b></#>  per second
 		cost:50 belief,100 influence
 		on tick:yield 60 belief
 		on tick:yield 25 influence
