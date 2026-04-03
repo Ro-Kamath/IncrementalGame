@@ -69,7 +69,7 @@ Buildings
 		icon class:buildingIconSize
 		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
 		cost:150 belief
-		on tick:yield 2 influence
+		yield:2 influence
 		cost increase:156%
 
 	*Lobbying
