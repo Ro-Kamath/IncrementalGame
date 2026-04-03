@@ -75,7 +75,7 @@ Buildings
 	*Lobbying
 		name:Lobbying
 		desc:Allows you to manipulate governments.
-		cost:(9600>belief and 2000>influence) 
+		cost:400 belief,100 influence
 		on tick:yield 60 belief,25 influence
 		cost increase:159%
 		req:40 belief,100 influence
@@ -93,7 +93,14 @@ Upgrades
   		desc: The initial mental commitment to the new reality. </>Effect: <b>Multiplies Focus output by 2</b>
 		passive:multiply yield of Focus by 2
 		cost:350 belief
-		req:belief>=300 
+		req:belief>=300
+
+	*StreetTeamCoord
+  		name:Street Team Coordination
+  		desc: Distributing physical flyers and stickers in key cities helps you boosts influence. </>Effect: <b>Multiplies PetitionDrive output by 6</b>
+		passive:multiply yield of PetitionDrive by 6
+		cost:350 belief,200 influence
+		req:belief>=300,influence>=165
 
 Achievements
 
