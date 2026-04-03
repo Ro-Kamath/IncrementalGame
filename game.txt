@@ -76,7 +76,7 @@ Buildings
 		name:Lobbying
 		desc:Allows you to manipulate governments.
 		cost:400 belief,100 influence
-		on tick:yield 60 belief,25 influence
+		yield: 60 belief,25 influence
 		cost increase:159%
 		req:40 belief,100 influence
 
