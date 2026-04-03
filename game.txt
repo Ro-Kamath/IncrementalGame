@@ -63,6 +63,23 @@ Buildings
 		on tick:yield 1 belief
 		cost increase:150%
 
+	*PetitionDrive
+		name:Petition Drive
+		desc:Helps you propagate your beliefs and acquire influence.
+		icon class:buildingIconSize
+		icon: https://file.garden/ac9KZhq4ZBJJm6gq/Consensus%20Game/focusicon_building.png
+		cost:150 belief
+		on tick:yield 2 influence
+		cost increase:156%
+
+	*Lobbying
+		name:Lobbying
+		desc:Allows you to manipulate governments.
+		cost:(9600>belief and 2000>influence) 
+		on tick:yield 60 belief and 25 influence
+		cost increase:159%
+		req:(belief>=9000 and 1850>influence)
+
 Buttons
 	*beliefButton
 		on click:yield 1 belief
